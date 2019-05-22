@@ -54,6 +54,12 @@ sendmsg("command", False)  # Tell the drone if it's ready to recieve commands
 
 # Commands go here, see SDK documentation for info
 
+sendmsg('temp')
+temp = results
+
+sendmsg('takeoff')
+sendmsg('up 200')
+
 
 
 
